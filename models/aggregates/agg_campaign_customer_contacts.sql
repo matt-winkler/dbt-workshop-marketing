@@ -1,4 +1,4 @@
-
+-- pr trigger
 {{
     config(
         materialized = 'table',
