@@ -7,8 +7,7 @@ with campaigns as (
     select
     
     id,
-    seq,
-    name,
+    name as campaign_name,
     tier_name,
     owner
 
