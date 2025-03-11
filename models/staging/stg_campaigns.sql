@@ -1,3 +1,4 @@
+-- Pr trigger
 with campaigns as (
 
     select * from {{ ref('campaigns') }}
@@ -7,8 +8,7 @@ with campaigns as (
     select
     
     id,
-    seq,
-    name,
+    name as campaign_name,
     tier_name,
     owner
 
