@@ -1,0 +1,46 @@
+version: 2
+
+models:
+  - name: agg_campaign_customer_contacts
+    access: public
+    description: ""
+    config:
+      contract:
+        enforced: true
+    columns:
+      - name: campaign_name
+        data_type: varchar
+        description: ""
+        tests:
+          - not_null
+        
+      - name: campaign_name
+        data_type: varchar
+        description: ""
+
+      - name: campaign_owner
+        data_type: varchar
+        description: ""
+        tests:
+          - accepted_values:
+              values: ['Rebecca', 'Ted', 'Roy']
+
+      - name: customer_name
+        data_type: varchar
+        description: ""
+
+      - name: customer_region
+        data_type: varchar
+        description: ""
+
+      - name: tier_name
+        data_type: varchar
+        description: ""
+
+      - name: email_address
+        data_type: varchar
+        description: ""
+
+      - name: phone_number
+        data_type: varchar
+        description: ""
