@@ -1,4 +1,4 @@
--- Pr trigger
+-- PR trigger
 with campaigns as (
 
     select * from {{ ref('campaigns') }}
